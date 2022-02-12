@@ -1,0 +1,51 @@
+{
+    "name": "🆉︎ᴇʙʀᴀ 🆉︎ᴇssɪᴏɴ 🅶︎ᴇɴᴇʀᴀᴛᴏʀ",
+    "description": "A ʙᴏᴛ ғᴏʀ ɢᴇɴᴇʀᴀᴛɪɴɢ sᴛʀɪɴɢ sᴇssɪᴏɴ ᴏғ ᴛᴇʟᴇɢʀᴀᴍ ᴀᴄᴄᴏᴜɴᴛ ᴍᴏsᴛʟʏ ғᴏʀ Usᴇʀʙᴏᴛ.",
+    "repository": "https://github.com/AbirHasan2005/TG-String-Session",
+    "logo": "https://telegra.ph/file/9d25c6bc85a8bfcca98df.jpg",
+    "keywords": [
+        "python",
+        "telegram"
+    ],
+    "buildpacks": [{
+    "url": "heroku/python"
+  }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "env": {
+        "PREMIUM_IDS": {
+            "description": "𝙿𝚁𝙴𝙼𝙸𝚄𝙼 𝙸𝙳𝚂 𝚂𝚄𝙳𝙾 𝙻𝙸𝚂𝚃  ",
+            "value": "",
+            "required": true
+        },
+        "UPDATES_CHANNEL": {
+            "description": "𝙵𝙸𝙻𝙻 𝚈𝙾𝚄𝚁 𝚄𝙾𝙳𝙰𝚃𝙴𝚂 𝙲𝙷𝙰𝙽𝙽𝙴𝙻.",
+            "value": "",
+            "required": true
+        },
+         "BOT_TOKEN": {
+            "description": "𝚈𝙾𝚄𝚁 𝙱𝙾𝚃 𝚃𝙾𝙺𝙴𝙽.",
+            "value": "",
+            "required": true
+        },
+        "OWNER_IDS": {
+            "description": "𝙾𝚆𝙽𝙴𝚁𝚂 𝚂𝚄𝙳𝙾 𝙸𝙳𝚂",
+            "value": "",
+            "required": true
+        },
+        "API_ID": {
+            "description": "𝙶𝙴𝚈 𝙵𝚁𝙾𝙼https://my.telegram.org",
+            "value": "",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "𝙶𝙴𝚃 𝙵𝚁𝙾𝙼 https://my.telegram.org",
+            "value": "",
+            "required": true
+        }
+    }
+}
