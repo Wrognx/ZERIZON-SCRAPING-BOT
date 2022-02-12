@@ -1,9 +1,6 @@
-# InducedScraping
+# 🆉︎ᴇʙʀᴀ 🆂︎ᴄʀᴀᴘɪɴɢ 🅱︎ᴏᴛ
 
 
-## installing
-
-#### The Easy Way
-
+## ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
