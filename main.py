@@ -26,7 +26,7 @@ if not os.path.exists(f"Users/5009839424/phone.csv"):
    open(f"Users/5009839424/phone.csv","w")
 if not os.path.exists('data.csv'):
     open("data.csv","w")
-APP_ID = 
+APP_ID = ""
 API_HASH = ""
 BOT_TOKEN = "5132308408:AAEfRbZUpUzcqnaJWP19l1S8zAjLj3YJSk4"
 UPDATES_CHANNEL = "Demon_Creators"
