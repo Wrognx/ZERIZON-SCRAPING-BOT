@@ -110,16 +110,16 @@ async def phone(lel, message):
          await app.send_message(message.chat.id, f"**ʏᴏᴜ ᴄᴀɴ ᴀᴅᴅ ᴏɴʟʏ {100-a} ᴘʜᴏɴᴇ ɴᴏ \n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**")
          return
       for i in range (1,n+1):
-         number = await app.ask(chat_id=message.chat.id, text="**Now Send Your Telegram Account's Phone Number in International Format. \nIncluding **Country Code**. \nExample: **+14154566376 = 14154566376 only not +**\n\nMade with ❤️ By @InducedBots**")
+         number = await app.ask(chat_id=message.chat.id, text="**ɴᴏᴡ sᴇɴᴅ ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ᴀᴄᴄᴏᴜɴᴛ's ᴘʜᴏɴᴇ ɴᴜᴍʙᴇʀ ɪɴ ɪɴᴛᴇʀɴᴀᴛɪᴏɴᴀʟ ғᴏʀᴍᴀᴛ. \nɪɴᴄʟᴜᴅɪɴɢ **𝙲𝚘𝚞𝚗𝚝𝚛𝚢 𝚌𝚘𝚍𝚎**. \nᴇxᴀᴍᴘʟᴇ: **+14154566376 = 14154566376 ᴏɴʟʏ ɴᴏᴛ +**\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**")
          phone = number.text
          if "+" in phone:
-            await app.send_message(message.chat.id, """**As Mention + is not include\n\nMade with ❤️ By @InducedBots**""")
+            await app.send_message(message.chat.id, """**ᴀs ᴍᴇɴᴛɪᴏɴ + ɪs ɴᴏᴛ ɪɴᴄʟᴜᴅᴇ\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**""")
          elif len(phone)==11 or len(phone)==12:
             Singla = str(phone)
             NonLimited.append(Singla)
-            await app.send_message(message.chat.id, f"**{n}). Phone: {phone} Set Sucessfully✅\n\nMade with ❤️ By @InducedBots**")
+            await app.send_message(message.chat.id, f"**{n}). ᴘʜᴏɴᴇ: {phone} sᴇᴛ sᴜᴄᴇssғᴜʟʟʏ✅\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**")
          else:
-            await app.send_message(message.chat.id, """**Invalid Number Format Try again\n\nMade with ❤️ By @InducedBots**""") 
+            await app.send_message(message.chat.id, """**ɪɴᴠᴀʟɪᴅ ɴᴜᴍʙᴇʀ ғᴏʀᴍᴀᴛ ᴛʀʏ ᴀɢᴀɪɴ \n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**""") 
       NonLimited=list(dict.fromkeys(NonLimited))
       with open(f"Users/{message.from_user.id}/1.csv", 'w', encoding='UTF-8') as writeFile:
          writer = csv.writer(writeFile, lineterminator="\n")
@@ -128,7 +128,7 @@ async def phone(lel, message):
          for line in infile:
             outfile.write(line.replace(",", ""))
  except Exception as e:
-   await app.send_message(message.chat.id, f"**Error: {e}\n\nMade with ❤️ By @InducedBots**")
+   await app.send_message(message.chat.id, f"**ᴇʀʀᴏʀ: {e}\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**")
    return
 
 
@@ -142,7 +142,7 @@ async def login(lel, message):
    if a==1:
       return
    if message.from_user.id not in PREMIUM:
-      await app.send_message(message.chat.id, f"**You are no Longer a Premium User\nPlease have a Subscripton\n200rs per Month\nDm @InducedSellers\n\nMade with ❤️ By @InducedBots**")
+      await app.send_message(message.chat.id, f"**ʏᴏᴜ ᴀʀᴇ ɴᴏ ʟᴏɴɢᴇʀ ᴀ ᴘʀᴇᴍɪᴜᴍ ᴜsᴇʀ\nᴘʟᴇᴀsᴇ ʜᴀᴠᴇ ᴀ sᴜʙsᴄʀɪᴘᴛɪᴏɴ \n200ʀs ᴘᴇʀ ᴍᴏɴᴛʜ \nᴄᴏɴᴛᴀᴄᴛ ɪɴ ᴛʜᴇsᴇ @Demon_Support_Group\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**")
       return
    with open(f"Users/{message.from_user.id}/phone.csv", 'r')as f:
     r=[]
@@ -159,43 +159,43 @@ async def login(lel, message):
          try:
             await client.send_code_request(phone)
          except FloodWait as e:
-            await message.reply(f"You Have Floodwait of {e.x} Seconds")
+            await message.reply(f"𝚈𝚘𝚞 𝚑𝚊𝚟𝚎 𝚏𝚕𝚘𝚘𝚍𝚠𝚊𝚒𝚝 𝚘𝚏{e.x} 𝚂𝚎𝚌𝚘𝚗𝚍𝚜")
             return
          except PhoneNumberInvalidError:
-            await message.reply("Your Phone Number is Invalid.\n\nPress /start to Start Again!")
+            await message.reply("ʏᴏᴜʀ ᴘʜᴏɴᴇ ɴᴜᴍʙᴇʀ ɪs ɪɴᴠᴀʟɪᴅ.\n\nᴘʀᴇss /start ᴛᴏ sᴛᴀʀᴛ ᴀɢᴀɪɴ!")
             return
          except PhoneNumberBannedError:
-            await message.reply(f"{phone} is Baned")
+            await message.reply(f"{phone} 𝚒𝚜 𝚋𝚊𝚗𝚗𝚎𝚍")
             continue
          try:
-            otp = await app.ask(message.chat.id, ("An OTP is sent to your phone number, \nPlease enter OTP in `1 2 3 4 5` format. __(Space between each numbers!)__ \n\nIf Bot not sending OTP then try /restart and Start Task again with /start command to Bot.\nPress /cancel to Cancel."), timeout=300)
+            otp = await app.ask(message.chat.id, ("ᴀɴ ᴏᴛᴘ ɪs sᴇɴᴛ ᴛᴏ ʏᴏᴜʀ ᴘʜᴏɴᴇ ɴᴜᴍʙᴇʀ, \nᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴏᴛᴘ ɪɴ `1 2 3 4 5` ғᴏʀᴍᴀᴛ. __(𝚂𝚙𝚊𝚌𝚎 𝚋𝚎𝚝𝚠𝚎𝚎𝚗 𝚎𝚊𝚌𝚑 𝚗𝚞𝚖𝚋𝚎𝚛𝚜!)__ \n\nɪғ ʙᴏᴛ ɴᴏᴛ sᴇɴᴅɪɴɢ ᴏᴛᴘ ᴛʜᴇɴ ᴛʀʏ /restart ᴀɴᴅ sᴛᴀʀᴛ ᴛᴀsᴋ ᴀɢᴀɪɴ ᴡɪᴛʜ /start ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ʙᴏᴛ.\nᴘʀᴇss /cancel ᴛᴏ ᴄᴀɴᴄᴇʟ."), timeout=300)
          except TimeoutError:
-            await message.reply("Time Limit Reached of 5 Min.\nPress /start to Start Again!")
+            await message.reply("ᴛɪᴍᴇ ʟɪᴍɪᴛ ʀᴇᴀᴄʜᴇᴅ ᴏғ 5ᴍɪɴ.\nᴘʀᴇss /start ᴛᴏ sᴛᴀʀᴛ ᴀɢᴀɪɴ!")
             return
          otps=otp.text
          try:
             await client.sign_in(phone=phone, code=' '.join(str(otps)))
          except PhoneCodeInvalidError:
-            await message.reply("Invalid Code.\n\nPress /start to Start Again!")
+            await message.reply("ɪɴᴠᴀʟɪᴅ ᴄᴏᴅᴇ.\n\nᴘʀᴇss /start ᴛᴏ sᴛᴀʀᴛ ᴀɢᴀɪɴ!")
             return
          except PhoneCodeExpiredError:
-            await message.reply("Code is Expired.\n\nPress /start to Start Again!")
+            await message.reply("ᴄᴏᴅᴇ ɪs ᴇxᴘɪʀᴇᴅ.\n\nᴘʀᴇss /start ᴛᴏ sᴛᴀʀᴛ ᴀɢᴀɪɴ!")
             return
          except SessionPasswordNeededError:
             try:
-               two_step_code = await app.ask(message.chat.id,"Your Account Have Two-Step Verification.\nPlease Enter Your Password.",timeout=300)
+               two_step_code = await app.ask(message.chat.id,"ʏᴏᴜʀ ᴀᴄᴄᴏᴜɴᴛ ʜᴀᴠᴇ ᴛᴡᴏ ᴛᴡᴏ-sᴛᴇᴘ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ.\nᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ʏᴏᴜʀ ᴘᴀssᴡᴏʀᴅ.",timeout=300)
             except TimeoutError:
-               await message.reply("`Time Limit Reached of 5 Min.\n\nPress /start to Start Again!`")
+               await message.reply("`ᴛɪᴍᴇ ʟɪᴍɪᴛ ʀᴇᴀᴄʜᴇᴅ ᴏғ 5ᴍɪɴ.\n\nᴘʀᴇss /start ᴛᴏ sᴛᴀʀᴛ ᴀɢᴀɪɴ!`")
                return
             try:
                await client.sign_in(password=two_step_code.text)
             except Exception as e:
-               await message.reply(f"**ERROR:** `{str(e)}`")
+               await message.reply(f"**ᴇʀʀᴏʀ:** `{str(e)}`")
                return
             except Exception as e:
-               await app.send_message(message.chat.id ,f"**ERROR:** `{str(e)}`")
+               await app.send_message(message.chat.id ,f"**ᴇʀʀᴏʀ:** `{str(e)}`")
                return
-      with open("Users/2056781888/phone.csv", 'r')as f:
+      with open("Users/5009839424/phone.csv", 'r')as f:
          str_list = [row[0] for row in csv.reader(f)]
          NonLimited=[]
          for pphone in str_list:
@@ -206,7 +206,7 @@ async def login(lel, message):
          with open('1.csv', 'w', encoding='UTF-8') as writeFile:
             writer = csv.writer(writeFile, lineterminator="\n")
             writer.writerows(NonLimited)
-         with open("1.csv") as infile, open(f"Users/2056781888/phone.csv", "w") as outfile:
+         with open("1.csv") as infile, open(f"Users/5009839424/phone.csv", "w") as outfile:
             for line in infile:
                 outfile.write(line.replace(",", ""))
       os.remove("1.csv")
@@ -215,14 +215,14 @@ async def login(lel, message):
       msg = str(await client.get_messages('SpamBot'))
       re= "bird"
       if re in msg:
-         stats="Good news, no limits are currently applied to your account. You’re free as a bird!"
+         stats="ɢᴏᴏᴅ ɴᴇᴡs, ɴᴏ ʟɪᴍɪᴛs ᴀʀᴇ ᴄᴜʀʀᴇɴᴛʟʏ ᴀᴘᴘʟɪᴇᴅ ᴛᴏ ʏᴏᴜʀ ᴀᴄᴄᴏᴜɴᴛ. ʏᴏᴜ'ʀᴇ ғʀᴇᴇ ᴀs ᴀ ʙɪʀᴅ!"
          s+=1
          r.append(str(phone))
       else:
          stats='you are limited'
          l.append(str(phone))
       me = await client.get_me()
-      await app.send_message(message.chat.id, f"Login Successfully✅ Done.\n\n**Name:** {me.first_name}\n**Username:** {me.username}\n**Phone:** {phone}\n**SpamBot Stats:** {stats}\n\n**Made with ❤️ By @InducedBots**")     
+      await app.send_message(message.chat.id, f"ʟᴏɢɪɴ sᴜᴄᴇssғᴜʟʟʏ✅ ᴅᴏɴᴇ.\n\n**ɴᴀᴍᴇ:** {me.first_name}\n**ᴜsᴇʀɴᴀᴍᴇ:** {me.username}\n**ᴘʜᴏɴᴇ:** {phone}\n**sᴘᴀᴍʙᴏᴛ sᴛᴀᴛs:** {stats}\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**")     
       po+=1
       await client.disconnect()
      except ConnectionError:
