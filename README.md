@@ -2,5 +2,7 @@
 
 
 ## ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+ 
+[![Deploy+On+Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Zebra012/Z3BRA-SCRAPING-BOT)
+
 
