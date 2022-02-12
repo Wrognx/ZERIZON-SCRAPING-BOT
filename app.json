@@ -22,7 +22,7 @@
             "value": "",
             "required": true
         },
-        "UPDATES_CHANNEL": {
+        "UPDATE_CHANNEL": {
             "description": "𝙵𝙸𝙻𝙻 𝚈𝙾𝚄𝚁 𝚄𝙾𝙳𝙰𝚃𝙴𝚂 𝙲𝙷𝙰𝙽𝙽𝙴𝙻.",
             "value": "",
             "required": true
