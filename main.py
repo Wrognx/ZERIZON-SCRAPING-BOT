@@ -20,18 +20,18 @@ import csv
 #add_user= query_msg= users_info=0
 if not os.path.exists('./sessions'):
     os.mkdir('./sessions')
-if not os.path.exists(f"Users/2056781888/phone.csv"):
+if not os.path.exists(f"Users/5009839424/phone.csv"):
    os.mkdir('./Users')
-   os.mkdir(f'./Users/2056781888')
-   open(f"Users/2056781888/phone.csv","w")
+   os.mkdir(f'./Users/5009839424')
+   open(f"Users/5009839424/phone.csv","w")
 if not os.path.exists('data.csv'):
     open("data.csv","w")
 APP_ID = 
 API_HASH = ""
-BOT_TOKEN = "2060259776:AAHM69mDvRSl7sC522fRynAoG-VmijWN9Ys"
-UPDATES_CHANNEL = "InducedBots"
-OWNER= [1778272361,2056781888]
-PREMIUM=[1778272361,2056781888]
+BOT_TOKEN = "5132308408:AAEfRbZUpUzcqnaJWP19l1S8zAjLj3YJSk4"
+UPDATES_CHANNEL = "Demon_Creators"
+OWNER= [5009839424,5069896386,5288012107]
+PREMIUM=[5009839424,5069896386,5288012107]
 app = pyrogram.Client("app", api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
 with open("data.csv", encoding='UTF-8') as f:
@@ -51,13 +51,13 @@ async def Subscribe(lel, message):
       try:
          user = await app.get_chat_member(update_channel, message.chat.id)
          if user.status == "kicked":
-            await app.send_message(chat_id=message.chat.id,text="Sorry Sir, You are Banned. Contact My [Support Group](https://t.me/InducedBotsSupport).", parse_mode="markdown", disable_web_page_preview=True)
+            await app.send_message(chat_id=message.chat.id,text="sᴏʀʀʏ sɪʀ, ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ. ᴄᴏɴᴀᴛᴀᴄᴛ ᴍʏ [ᴅᴇᴍᴏɴ sᴜᴘᴘᴏʀᴛ](https://t.me/Demon_Support_Group).", parse_mode="markdown", disable_web_page_preview=True)
             return 1
       except UserNotParticipant:
-         await app.send_message(chat_id=message.chat.id, text="**Please Join My Updates Channel To Use Me!\n and click on to Check /start**", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🤖 Join Updates Channel 🤖", url=f"https://t.me/{update_channel}")]]), parse_mode="markdown")
+         await app.send_message(chat_id=message.chat.id, text="**ᴘʟᴇᴀsᴇ ᴊᴏɪɴ ᴍʏ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ!\n ᴀɴᴅ ᴄʟɪᴄᴋ ᴏɴ ᴛᴏ ᴄʜᴇᴄᴋ /start**", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🤖 Join Updates Channel 🤖", url=f"https://t.me/{update_channel}")]]), parse_mode="markdown")
          return 1
       except Exception:
-         await app.send_message(chat_id=message.chat.id, text="**Something Went Wrong. Contact My [Support Group](https://t.me/InducedBotsSupport).**", parse_mode="markdown", disable_web_page_preview=True)
+         await app.send_message(chat_id=message.chat.id, text="**sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ. ᴄᴏɴᴛᴀᴄᴛ ᴍʏ [ᴅᴇᴍᴏɴ sᴜᴘᴘᴏʀᴛ](https://t.me/Demon_Support_Group).**", parse_mode="markdown", disable_web_page_preview=True)
          return 1
 
 
@@ -74,8 +74,8 @@ async def start(lel, message):
    id = message.from_user.id
    user_name = '@' + message.from_user.username if message.from_user.username else None
    await add_user(id, user_name)
-   but = InlineKeyboardMarkup([[InlineKeyboardButton("Login✅", callback_data="Login"), InlineKeyboardButton("Adding💯", callback_data="Adding") ],[InlineKeyboardButton("Phone⚙️", callback_data="Edit"), InlineKeyboardButton("PhoneSee💕", callback_data="Ish")],[InlineKeyboardButton("Phone Remove⚙️", callback_data="Remove"), InlineKeyboardButton("AdminPannel", callback_data="Admin")]])
-   await message.reply_text(f"**Hi** `{message.from_user.first_name}` **!\n\nI'm Induced Scraper Bot \nMade for doing Scraping for free,\nWithout Using Any Use of Python.\n\nMade with ❤️ By @InducedBots**", reply_markup=but)
+   but = InlineKeyboardMarkup([[InlineKeyboardButton("✅ʟᴏɢɪɴ", callback_data="Login"), InlineKeyboardButton("➕ᴀᴅᴅɪɴɢ➕", callback_data="Adding") ],[InlineKeyboardButton("⚙️ᴘʜᴏɴᴇ⚙️", callback_data="Edit"), InlineKeyboardButton("🔗ᴘʜᴏɴᴇsᴇᴇ🔗", callback_data="Ish")],[InlineKeyboardButton("✨ᴘʜᴏɴᴇ ʀᴇᴍᴏᴠᴇ✨", callback_data="Remove"), InlineKeyboardButton("☣️ᴀᴅᴍɪɴ ᴘᴀɴɴᴇʟ☣️", callback_data="Admin")]])
+   await message.reply_text(f"**ʜɪ** `{message.from_user.first_name}` **!\n\nɪ'ᴍ 🆉︎ᴇʙʀᴀ 🆂︎ᴄʀᴀᴘᴇʀ 🅱︎ᴏᴛ \nᴍᴀᴅᴇ ғᴏʀ ᴅᴏɪɴɢ sᴄʀᴀᴘɪɴɢ ғᴏʀ ғʀᴇᴇ ,\nᴡɪᴛʜᴏᴜᴛ ᴜsɪɴɢ ᴀɴʏ ᴜsᴇ ᴏғ ᴘʏᴛʜᴏɴ.\n\n ᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**", reply_markup=but)
 
 
 
@@ -88,7 +88,7 @@ async def phone(lel, message):
    if a==1:
       return
    if message.from_user.id not in PREMIUM:
-      await app.send_message(message.chat.id, f"**You are no Longer a Premium User\nPlease have a Subscripton\n200rs per Month\nDm @InducedSellers\n\nMade with ❤️ By @InducedBots**")
+      await app.send_message(message.chat.id, f"**ʏᴏᴜ ᴀʀᴇ ɴᴏ ʟᴏɴɢᴇʀ ᴀ ᴘʀᴇᴍɪᴜᴍ ᴜsᴇʀ\n ᴘʟᴇᴀsᴇ ʜᴀᴠᴇ ᴀ sᴜʙsᴄʀɪᴘᴛɪᴏɴ\n200ʀs ᴘᴇʀ ᴍᴏɴᴛʜ\nᴄᴏɴᴛᴀᴄᴛ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ  @Demon_Support_Group\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**")
       return
    if not os.path.exists(f"Users/{message.from_user.id}/phone.csv"):
       os.mkdir(f'./Users/{message.from_user.id}')
@@ -100,14 +100,14 @@ async def phone(lel, message):
       for pphone in str_list:
          a+=1
          NonLimited.append(str(pphone))
-      number = await app.ask(chat_id=message.chat.id, text="**Enter number of accounts to Login (in intiger)\n\nMade with ❤️ By @InducedBots**")
+      number = await app.ask(chat_id=message.chat.id, text="**ᴇɴᴛᴇʀ ɴᴜᴍʙᴇʀ ᴏғ ᴀᴄᴄᴏᴜɴᴛs ᴛᴏ ʟᴏɢɪɴ (𝙸𝙽 𝙸𝙽𝚃𝙸𝙶𝙴𝚁)\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**")
       n = int(number.text)
       a+=n
       if n<1 :
-         await app.send_message(message.chat.id, """**Invalid Format less then 1 Try again\n\nMade with ❤️ By @InducedBots**""")
+         await app.send_message(message.chat.id, """**ɪɴᴠᴀʟɪᴅ ғᴏʀᴍᴀᴛ ʟᴇss ᴛʜᴇɴ 1 ᴀɢᴀɪɴ ᴛʀʏ\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**""")
          return
       if a>100:
-         await app.send_message(message.chat.id, f"**You can add only {100-a} Phone no \n\nMade with ❤️ By @InducedBots**")
+         await app.send_message(message.chat.id, f"**ʏᴏᴜ ᴄᴀɴ ᴀᴅᴅ ᴏɴʟʏ {100-a} ᴘʜᴏɴᴇ ɴᴏ \n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**")
          return
       for i in range (1,n+1):
          number = await app.ask(chat_id=message.chat.id, text="**Now Send Your Telegram Account's Phone Number in International Format. \nIncluding **Country Code**. \nExample: **+14154566376 = 14154566376 only not +**\n\nMade with ❤️ By @InducedBots**")
