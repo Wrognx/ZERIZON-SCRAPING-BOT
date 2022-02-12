@@ -319,7 +319,7 @@ async def to(lel, message):
                   if peer == 10:
                      await client.disconnect()
                      await app.send_message(chat_id=message.chat.id, text=f"{r}")
-                     await app.send_message(chat_id=message.chat.id, text=f"**Too Many PeerFloodError\nMoving To Next Number**")
+                     await app.send_message(chat_id=message.chat.id, text=f"**ᴛᴏᴏ ᴍᴀɴʏ ᴘᴇᴇʀғʟᴏᴏᴅᴇʀʀᴏʀ \nᴍᴏᴠɪɴɢ ᴛᴏ ɴᴇxᴛ ɴᴜᴍʙᴇʀ**")
                      break
                   status = 'PeerFloodError'
                   peer+=1
@@ -414,7 +414,7 @@ async def subscribers_count(lel, message):
       return
    if message.from_user.id in OWNER:
       but = InlineKeyboardMarkup([[InlineKeyboardButton("☣️ᴜsᴇʀs☣️", callback_data="Users")], [InlineKeyboardButton("⭕ʙʀᴏᴀᴅᴄᴀsᴛ⭕", callback_data="Broadcast")],[InlineKeyboardButton("➕ᴀᴅᴅ ᴜsᴇʀs➕", callback_data="New")], [InlineKeyboardButton("✨ᴄʜᴇᴄᴋ ᴜsᴇʀs✨", callback_data="Check")]])
-      await app.send_message(chat_id=message.chat.id,text=f"**ʜɪ** `{message.from_user.first_name}` **!\n\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴀᴅᴍɪɴ ᴏғ ᴅᴇᴍᴏɴ ᴄʀᴇᴀᴛᴏʀs ʙᴏᴛs\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**", reply_markup=but)
+      await app.send_message(chat_id=message.chat.id,text=f"**ʜɪ** `{message.from_user.first_name}` **!\n\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴀᴅᴍɪɴ ᴏғ 🆉︎ᴇʙʀᴀ 🆂︎ᴄʀᴀᴘɪɴɢ 🅱︎ᴏᴛ\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**", reply_markup=but)
    else:
       await app.send_message(chat_id=message.chat.id,text="**ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴏᴡɴᴇʀ ᴏғ ʙᴏᴛ\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**")
 
@@ -426,30 +426,30 @@ async def button(app, update):
    k = update.data
    if "Login" in k:
       await update.message.delete()
-      await app.send_message(update.message.chat.id, """**There is nothing no more..!\nJust Click on /login to login and check stats of Account.\n\nMade with ❤️ By @InducedBots**""") 
+      await app.send_message(update.message.chat.id, """**ᴛʜᴇʀᴇ ɪs ɴᴏᴛʜɪɴɢ ɴᴏ ᴍᴏʀᴇ..!\nᴊᴜsᴛ ᴄʟɪᴄᴋ ᴏɴ /login ᴛᴏ ʟᴏɢɪɴ ᴀɴᴅ ᴄʜᴇᴄᴋ sᴛᴀᴛs ᴏғ ᴀᴄᴄᴏᴜɴᴛ.\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**""") 
    elif "Ish" in k:
       await update.message.delete()
-      await app.send_message(update.message.chat.id, """**There is nothing no more..!\nJust Click on /phonesee to login and check stats of Account.\n\nMade with ❤️ By @InducedBots**""") 
+      await app.send_message(update.message.chat.id, """**ᴛʜᴇʀᴇ ɪs ɴᴏᴛʜɪɴɢ ɴᴏ ᴍᴏʀᴇ..!\nᴊᴜsᴛ ᴄʟɪᴄᴋ ᴏɴ /phonesee ᴛᴏ ʟᴏɢɪɴ ᴀɴᴅ ᴄʜᴇᴄᴋ sᴛᴀᴛs ᴏғ ᴀᴄᴄᴏᴜɴᴛ.\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**""") 
    elif "Remove" in k:
       await update.message.delete()
-      await app.send_message(update.message.chat.id, """**There is nothing no more..!\nJust Click on /remove to login and check stats of Account.\n\nMade with ❤️ By @InducedBots**""") 
+      await app.send_message(update.message.chat.id, """**ᴛʜᴇʀᴇ ɪs ɴᴏᴛʜɪɴɢ ɴᴏ ᴍᴏʀᴇ..!\nᴊᴜsᴛ ᴄʟɪᴄᴋ ᴏɴ /remove ᴛᴏ ʟᴏɢɪɴ ᴀɴᴅ ᴄʜᴇᴄᴋ sᴛᴀᴛs ᴏғ ᴀᴄᴄᴏᴜɴᴛ.\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**""") 
    elif "Adding" in k:
       await update.message.delete()
-      await app.send_message(update.message.chat.id, """**There is nothing no more..!\nJust Click on /adding to start adding from Login✅ Account.\n\nMade with ❤️ By @InducedBots**""") 
+      await app.send_message(update.message.chat.id, """**ᴛʜᴇʀᴇ ɪs ɴᴏᴛʜɪɴɢ ɴᴏ ᴍᴏʀᴇ..!\nᴊᴜsᴛ ᴄʟɪᴄᴋ ᴏɴ /adding ᴛᴏ sᴛᴀʀᴛ ✅ᴀᴅᴅɪɴɢ ғʀᴏᴍ ʟᴏɢɪɴ ᴀᴄᴄᴏᴜɴᴛ.\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**""") 
    elif "Edit" in k:
       await update.message.delete()
-      await app.send_message(update.message.chat.id, """**There is nothing no more..!\nJust Click on /phone to login and check stats of Account.\n\nMade with ❤️ By @InducedBots**""") 
+      await app.send_message(update.message.chat.id, """**ᴛʜᴇʀᴇ ɪs ɴᴏᴛʜɪɴɢ ɴᴏ ᴍᴏʀᴇ..!\nᴊᴜsᴛ ᴄʟɪᴄᴋ ᴏɴ /phone ᴛᴏ ʟᴏɢɪɴ ᴀɴᴅ ᴄʜᴇᴄᴋ sᴛᴀᴛs ᴏғ ᴀᴄᴄᴏᴜɴᴛ.\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**""") 
    elif "Home" in k:
       await update.message.delete()
-      await app.send_message(update.message.chat.id, """**There is nothing no more..!\nJust Click on /start to Go Home.\n\nMade with ❤️ By @InducedBots**""") 
+      await app.send_message(update.message.chat.id, """**ᴛʜᴇʀᴇ ɪs ɴᴏᴛʜɪɴɢ ɴᴏ ᴍᴏʀᴇ..!\nᴊᴜsᴛ ᴄʟɪᴄᴋ ᴏɴ /start ᴛᴏ ɢᴏ ʜᴏᴍᴇ.\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**""") 
    elif "Users" in k:
       await update.message.delete()
-      msg = await app.send_message(update.message.chat.id,"Please Wait...")
+      msg = await app.send_message(update.message.chat.id,"ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...")
       messages = await users_info(app)
       await msg.edit(f"Total:\n\nUsers - {messages[0]}\nBlocked - {messages[1]}")
    elif "New" in k:
       await update.message.delete()
-      number = await app.ask(chat_id=update.message.chat.id, text="**Send User Id Of New User\n\nMade with ❤️ By @InducedBots**")
+      number = await app.ask(chat_id=update.message.chat.id, text="**sᴇɴᴅ ᴜsᴇʀ ɪᴅ ᴏғ ɴᴇᴡ ᴜsᴇʀ\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**")
       phone = int(number.text)
       with open("data.csv", encoding='UTF-8') as f:
          rows = csv.reader(f, delimiter=",", lineterminator="\n")
@@ -464,7 +464,7 @@ async def button(app, update):
             a+=1
          writer.writerow([a, phone, date.today() ])
          PREMIUM.append(int(phone))
-         await app.send_message(chat_id=update.message.chat.id,text="Done SucessFully")
+         await app.send_message(chat_id=update.message.chat.id,text="✅ᴅᴏɴᴇ sᴜᴄᴇssғᴜʟʟʏ")
 
    elif "Check" in k:
       await update.message.delete()
@@ -479,22 +479,22 @@ async def button(app, update):
             if d<=r:
                a+=1
                E+=f"{a}). {row[1]} - {row[2]}\n"
-         E+="\n\n**Made with ❤️ By @InducedBots**"
+         E+="\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**"
          await app.send_message(chat_id=update.message.chat.id,text=E)
 
    elif "Admin" in k:
       await update.message.delete()
       if update.message.chat.id in OWNER:
-         but = InlineKeyboardMarkup([[InlineKeyboardButton("Users✅", callback_data="Users")], [InlineKeyboardButton("Broadcast💯", callback_data="Broadcast")],[InlineKeyboardButton("AddUser", callback_data="New")], [InlineKeyboardButton("Check Users", callback_data="Check")]])
-         await app.send_message(chat_id=update.message.chat.id,text=f"**Welcome to Admin Pannel of Induced Bot\n\nMade with ❤️ By @InducedBots**", reply_markup=but)
+         but = InlineKeyboardMarkup([[InlineKeyboardButton("☣️ᴜsᴇʀs☣️", callback_data="Users")], [InlineKeyboardButton("⭕ʙʀᴏᴀᴅᴄᴀsᴛ⭕", callback_data="Broadcast")],[InlineKeyboardButton("➕ᴀᴅᴅ ᴜsᴇʀs➕", callback_data="New")], [InlineKeyboardButton("✨ᴄʜᴇᴄᴋ ᴜsᴇʀs✨", callback_data="Check")]])
+         await app.send_message(chat_id=update.message.chat.id,text=f"**ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴀᴅᴍɪɴ ᴘᴀɴɴᴇʟ ᴏғ 🆉︎ᴇʙʀᴀ 🆂︎ᴄʀᴀᴘɪɴɢ 🅱︎ᴏᴛ\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**", reply_markup=but)
       else:
-         await app.send_message(chat_id=update.message.chat.id,text="**You are not owner of Bot \n\nMade with ❤️ By @InducedBots**")
+         await app.send_message(chat_id=update.message.chat.id,text="**ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴏᴡɴᴇʀ ᴏғ ʙᴏᴛ \n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**")
    elif "Broadcast" in k:
     try:
       query = await query_msg()
       a=0
       b=0
-      number = await app.ask(chat_id=update.message.chat.id, text="**Now me message For Broadcast\n\nMade with ❤️ By @InducedBots**")
+      number = await app.ask(chat_id=update.message.chat.id, text="**ɴᴏᴡ ᴍᴇ ᴍᴇssᴀɢᴇ ғᴏʀ ʙʀᴏᴀᴅᴄᴀsᴛ \n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**")
       phone = number.text
       for row in query:
          chat_id = int(row[0])
@@ -507,23 +507,15 @@ async def button(app, update):
          except Exception:
             b+=1
             pass
-      await app.send_message(update.message.chat.id,f"Successfully Broadcasted to {a} Chats\nFailed - {b} Chats !")
+      await app.send_message(update.message.chat.id,f"✅sᴜᴄᴇssғᴜʟʟʏ ʙʀᴏᴀᴅᴄᴀsᴛᴇᴅ ᴛᴏ {a} ᴄʜᴀᴛs\nғᴀɪʟᴇᴅ - {b} ᴄʜᴀᴛs !")
     except Exception as e:
-      await app.send_message(update.message.chat.id,f"**Error: {e}\n\nMade with ❤️ By @InducedBots**")
+      await app.send_message(update.message.chat.id,f"**ᴇʀʀᴏʀ: {e}\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**")
 
 
 
 
-text = """
-╔════╗ㅤMembers 
-╚═╗╔═╝ Scraping Bot
-╔═╣╠═╗
-║╔╣╠╗║ㅤInduced
-║╚╣╠╝║ Scraper Bot
-╚═╣╠═╝
-╔═╝╚═╗ 
-╚════╝ 
+text = """ʜᴇʟʟᴏ ɪ ᴀᴍ ᴏᴡɴᴇʀ ᴏғ ʙᴏᴛ sᴜᴍɪᴛ ʏᴀᴅᴀᴠ ᴘʟᴇᴀsᴇ ᴊᴏɪɴ ᴍʏ ɢʀᴏᴜᴘ ᴄʜᴀɴɴᴇʟs
 """
 print(text)
-print("Induced Adding Started Sucessfully........")
+print("ᴢᴇʙʀᴀ ᴀᴅᴅɪɴɢ sᴛᴀʀᴛᴇᴅ sᴜᴄᴇssғᴜʟʟʏ........")
 app.run()
