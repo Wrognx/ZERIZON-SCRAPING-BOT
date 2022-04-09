@@ -30,8 +30,8 @@ APP_ID = ""
 API_HASH = ""
 BOT_TOKEN = "5132308408:AAEfRbZUpUzcqnaJWP19l1S8zAjLj3YJSk4"
 UPDATES_CHANNEL = "Demon_Creators"
-OWNER= [5009839424,5069896386,5288012107]
-PREMIUM=[5009839424,5069896386,5288012107]
+OWNER= [1670464790,5232671552,5156363006]
+PREMIUM=[1670464790,5232671552,5156363006]
 app = pyrogram.Client("app", api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
 with open("data.csv", encoding='UTF-8') as f:
@@ -75,7 +75,7 @@ async def start(lel, message):
    user_name = '@' + message.from_user.username if message.from_user.username else None
    await add_user(id, user_name)
    but = InlineKeyboardMarkup([[InlineKeyboardButton("✅ʟᴏɢɪɴ", callback_data="Login"), InlineKeyboardButton("➕ᴀᴅᴅɪɴɢ➕", callback_data="Adding") ],[InlineKeyboardButton("⚙️ᴘʜᴏɴᴇ⚙️", callback_data="Edit"), InlineKeyboardButton("🔗ᴘʜᴏɴᴇsᴇᴇ🔗", callback_data="Ish")],[InlineKeyboardButton("✨ᴘʜᴏɴᴇ ʀᴇᴍᴏᴠᴇ✨", callback_data="Remove"), InlineKeyboardButton("☣️ᴀᴅᴍɪɴ ᴘᴀɴɴᴇʟ☣️", callback_data="Admin")]])
-   await message.reply_text(f"**ʜɪ** `{message.from_user.first_name}` **!\n\nɪ'ᴍ 🆉︎ᴇʙʀᴀ 🆂︎ᴄʀᴀᴘᴇʀ 🅱︎ᴏᴛ \nᴍᴀᴅᴇ ғᴏʀ ᴅᴏɪɴɢ sᴄʀᴀᴘɪɴɢ ғᴏʀ ғʀᴇᴇ ,\nᴡɪᴛʜᴏᴜᴛ ᴜsɪɴɢ ᴀɴʏ ᴜsᴇ ᴏғ ᴘʏᴛʜᴏɴ.\n\n ᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**", reply_markup=but)
+   await message.reply_text(f"**ʜɪ** `{message.from_user.first_name}` **!\n\nɪ'ᴍ 🆉︎ᴇʀɪᴢᴏɴ 🆂︎ᴄʀᴀᴘᴇʀ 🅱︎ᴏᴛ \nᴍᴀᴅᴇ ғᴏʀ ᴅᴏɪɴɢ sᴄʀᴀᴘɪɴɢ ғᴏʀ ғʀᴇᴇ ,\nᴡɪᴛʜᴏᴜᴛ ᴜsɪɴɢ ᴀɴʏ ᴜsᴇ ᴏғ ᴘʏᴛʜᴏɴ.\n\n ᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**", reply_markup=but)
 
 
 
@@ -414,7 +414,7 @@ async def subscribers_count(lel, message):
       return
    if message.from_user.id in OWNER:
       but = InlineKeyboardMarkup([[InlineKeyboardButton("☣️ᴜsᴇʀs☣️", callback_data="Users")], [InlineKeyboardButton("⭕ʙʀᴏᴀᴅᴄᴀsᴛ⭕", callback_data="Broadcast")],[InlineKeyboardButton("➕ᴀᴅᴅ ᴜsᴇʀs➕", callback_data="New")], [InlineKeyboardButton("✨ᴄʜᴇᴄᴋ ᴜsᴇʀs✨", callback_data="Check")]])
-      await app.send_message(chat_id=message.chat.id,text=f"**ʜɪ** `{message.from_user.first_name}` **!\n\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴀᴅᴍɪɴ ᴏғ 🆉︎ᴇʙʀᴀ 🆂︎ᴄʀᴀᴘɪɴɢ 🅱︎ᴏᴛ\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**", reply_markup=but)
+      await app.send_message(chat_id=message.chat.id,text=f"**ʜɪ** `{message.from_user.first_name}` **!\n\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴀᴅᴍɪɴ ᴏғ 🆉︎ᴇʀɪᴢᴏɴ 🆂︎ᴄʀᴀᴘɪɴɢ 🅱︎ᴏᴛ\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**", reply_markup=but)
    else:
       await app.send_message(chat_id=message.chat.id,text="**ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴏᴡɴᴇʀ ᴏғ ʙᴏᴛ\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**")
 
@@ -486,7 +486,7 @@ async def button(app, update):
       await update.message.delete()
       if update.message.chat.id in OWNER:
          but = InlineKeyboardMarkup([[InlineKeyboardButton("☣️ᴜsᴇʀs☣️", callback_data="Users")], [InlineKeyboardButton("⭕ʙʀᴏᴀᴅᴄᴀsᴛ⭕", callback_data="Broadcast")],[InlineKeyboardButton("➕ᴀᴅᴅ ᴜsᴇʀs➕", callback_data="New")], [InlineKeyboardButton("✨ᴄʜᴇᴄᴋ ᴜsᴇʀs✨", callback_data="Check")]])
-         await app.send_message(chat_id=update.message.chat.id,text=f"**ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴀᴅᴍɪɴ ᴘᴀɴɴᴇʟ ᴏғ 🆉︎ᴇʙʀᴀ 🆂︎ᴄʀᴀᴘɪɴɢ 🅱︎ᴏᴛ\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**", reply_markup=but)
+         await app.send_message(chat_id=update.message.chat.id,text=f"**ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴀᴅᴍɪɴ ᴘᴀɴɴᴇʟ ᴏғ 🆉︎ᴇʀɪᴢᴏɴ 🆂︎ᴄʀᴀᴘɪɴɢ 🅱︎ᴏᴛ\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**", reply_markup=but)
       else:
          await app.send_message(chat_id=update.message.chat.id,text="**ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴏᴡɴᴇʀ ᴏғ ʙᴏᴛ \n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʙʏ @Demon_Creators**")
    elif "Broadcast" in k:
@@ -514,8 +514,8 @@ async def button(app, update):
 
 
 
-text = """ʜᴇʟʟᴏ ɪ ᴀᴍ ᴏᴡɴᴇʀ ᴏғ ʙᴏᴛ sᴜᴍɪᴛ ʏᴀᴅᴀᴠ ᴘʟᴇᴀsᴇ ᴊᴏɪɴ ᴍʏ ɢʀᴏᴜᴘ ᴄʜᴀɴɴᴇʟs
+text = """ʜᴇʟʟᴏ ɪ ᴀᴍ ᴏᴡɴᴇʀ ᴏғ ʙᴏᴛ ʏᴀsʜ ʀᴀᴊ ᴘʟᴇᴀsᴇ ᴊᴏɪɴ ᴍʏ ɢʀᴏᴜᴘ ᴄʜᴀɴɴᴇʟs
 """
 print(text)
-print("ᴢᴇʙʀᴀ ᴀᴅᴅɪɴɢ sᴛᴀʀᴛᴇᴅ sᴜᴄᴇssғᴜʟʟʏ........")
+print("ᴢᴇʀɪᴢᴏɴ ᴀᴅᴅɪɴɢ sᴛᴀʀᴛᴇᴅ sᴜᴄᴇssғᴜʟʟʏ........")
 app.run()
